@@ -7,7 +7,7 @@ def length(lst):
     return l
 
 # 
-def mean(lst):
+def mean_func(lst):
     if lst == []:
         return 0
     s = 0
@@ -40,7 +40,7 @@ def median(lst):
 def standard_deviation(lst):
     if lst == []:
         return 0
-    mean = mean(lst)
+    mean = mean_func(lst)
     s = 0
     for i in lst:
         s += (i - mean) ** 2
@@ -52,7 +52,7 @@ def standard_deviation(lst):
 def print_all(lst):
     statistics = {
         "length": length(lst),
-        "mean": mean(lst),
+        "mean": mean_func(lst),
         "range": range_of_list(lst),
         "median": median(lst),
         "standard_deviation": standard_deviation(lst)
