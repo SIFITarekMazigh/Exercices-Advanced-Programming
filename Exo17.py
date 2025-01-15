@@ -20,11 +20,6 @@ print("Numbers List:", numbers, "Shoe Sizes List:", shoe_sizes)
 combined = numbers + shoe_sizes
 print("Combined List:", combined)
 
-# combine the two lists 
-combined = [(numbers[i], shoe_sizes[i]) for i in range(n)]
-print("Combined List:", combined)
-
-
 
 #add duplicates
 numbers.append(1) # duplicate
